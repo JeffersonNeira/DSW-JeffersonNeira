@@ -4,36 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fase 2</title>
+    <title>Fase 2 - Etiquetas semánticas, CSS Grid</title>
 </head>
 <body>
-    <header>
-        <h1>TITULO TEMA</h1>
+    <header id="inicio">
+        <h1 style="text-align: center;">Etiquetas semánticas, CSS Grid</h1>
     </header>
     <nav>
         <ul>
-            <li>Inicio</li>
-            <li>Temas
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="">Temas</a>
                 <ul>
-                    <li>Tema 1</li>
-                    <li>Tema 2</li>
+                    <li><a href="#Etiquetas semánticas">Etiquetas semánticas</a></li>
+                    <li><a href="#CSS Grid">CSS Grid</a></li>
                 </ul>
             </li>
-            <li>Recursos Digitales</li>
-            <li>Aprendizaje</li>
-            <li>Acerca de</li>
+            <li><a href="">Recursos Digitales</a>
+                <ul>
+                    <li><a href="#Imagen Etiquetas semánticas">Imagen <em>Etiquetas semánticas</em></a></li>
+                    <li><a href="#Imagen Esquema CSS Grid">Imagen <em>CSS Grid</em></a></li>
+                </ul>
+            </li>
+            <li><a href="">Aprendizaje</a>
+                <ul>
+                    <li><a href="#Mockup">Actividad 1: Mockup</a></li>
+                </ul>
+            </li>
+            <li><a href="#acerca de">Acerca de</a></li>
         </ul>
     </nav>
     <hr>
     <section>
         <h2>Propósito del sitio</h2>
-        <p>describa el propósito de este sitio, de acuerdo con el tema seleccionado</p>
-        <article>
-            <p>dentro de ella redactar un primer borrador con los contenidos que se publicarán en el sitio web, debidamente citados y referenciados con norma APA, al igual que al menos una imagen que ilustre los temas que se abordan en el sitio</p>
+        <p>En este sitio Web vamos a ver lo relacionado con las Etiquetas semánticas y CSS Grid para la creación de sitios Web, se busca que el lector logre comprender de la mejor manera estos temas para asi lograr la creacion exitosa de un Sitio Web Básico.</p>
+        <hr>
+        <article id="Etiquetas semánticas">
+            <h2>Etiquetas semánticas</h2>
+            <p>Con las etiquetas semánticas se describe el significado del contenido y permite que los documentos HTML sean más claros para los desarrolladores y para los navegadores que procesan y renderizan sus informaciones. En la versión 5 del HTML, las principales modificaciones son justo en la estructura semántica, con nuevas tags que representan las secciones, con las divs madres.</p>
+            <h3>Los elementos semánticos</h3>
+            <p>La etiqueta <em>header</em> es utilizada para identificar la cabecera de la página.</p>
+            <p>La etiqueta <em>nav</em> representa el menú de navegación de la página.</p>
+            <p>El elemento <em>main</em> especifica el contenido principal de la página, o sea, de mayor relevancia para el usuario.</p>
+            <p>El elemento <em>section</em> representa una parte o una sección de la página.</p>
+            <p>El elemento <em>article</em> declara un contenido que es independiente de cualquier otras secciones.</p>
+            <p>El elemento <em>figure</em> es una marcación de uso específico para insertar figuras o imágenes, con sus atributos.</p>
+            <p>El atributo <em>alt</em> promueve la accesibilidad del contenido porque contiene la descripción de la imagen <em>img</em> de la página y es esa información que el lector de voz lee para el usuario, en los casos de las personas con discapacidad visual.</p>
+            <p>El elemento <em>aside</em> es utilizado para crear un contenido de apoyo o adicional al contenido principal.</p>
+            <p>El elemento <em>footer</em> representa el pie de la página, en la área inferior y última de la página.</p>
+            <p style="text-align:center" id="Imagen Etiquetas semánticas">
+            <img src="../imagenes/semantica-html.png" alt="Imagen Etiquetas semánticas" width="300">
+            </p>
+            <p>Fuente: Tatiani Meneghini (2021). <em>La semántica en HTML5.</em> https://www.aluracursos.com/blog/la-semantica-en-html5</p>
+        </article>
+        <hr>
+        <article id="CSS Grid">
+            <h2>CSS Grid</h2>
+            <p>CSS Grid es un sistema de posicionamiento avanzado de CSS en el que ubicamos los elementos HTML de nuestra página web con base a una cuadrícula. Dentro de esta cuadrícula, los elementos se ubican en celdas que podemos modificar usando una variedad de propiedades.</p>
+            <p style="text-align:center" id="Imagen Esquema CSS Grid">
+            <img src="../imagenes/CSS Grid.jpg" alt="Imagen Esquema CSS Grid" width="500">
+            </p>
+            <p>Fuente: Redacción KeepCoding (2022). <em>Cómo funcionan las áreas en CSS Grid - CSS Grid</em> https://keepcoding.io/blog/como-funcionan-las-areas-en-css-grid/</p>
+        </article>
+        <hr>
+        <article id="Mockup">
+            <h2>Mockup</h2>
+            <p style="text-align:center">
+            <img src="../imagenes/Mockup.png" alt="Imagen Mockup Sitio Web" width="500">
+            </p>
         </article>
     </section>
-    <footer>
-        <p>correo: janeirarod@unadvirtual.edu.co <br> skype: Jefferson Alejandro Neira Rodriguez <br> Fecha :21/09/2022</p>
+    <p style="text-align: right;">
+        <a href="#inicio">Volver Arriba</a>
+    </p>
+    <hr>
+    <footer id="acerca de">
+        <p style="text-align: center;">
+            <strong>Correo:</strong> janeirarod@unadvirtual.edu.co
+            <br>
+            <strong>Skype:</strong> Jefferson Alejandro Neira Rodriguez
+            <br> 
+            <strong>Fecha:</strong> 21/09/2022
+        </p>
     </footer>
 </body>
 </html>
